@@ -1,0 +1,92 @@
+@import './variables';
+
+header {
+    background-color: $bg-header-hero;
+    font-family: 'DM sans';
+    font-weight: 700;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.header .container {
+  
+    .container {
+        display: flex;
+        align-items: center;
+        padding-top: 21px;
+        padding-bottom: 27px;
+    
+        @media screen and (min-width: 768px) {
+          padding-top: 38px;
+          padding-bottom: 15px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+          padding-bottom: 21px;
+        }
+      }
+}
+
+.header-logo {
+    position: absolute;
+    margin-left: 46px;
+    margin-top: 36px;
+}
+
+.navigation,
+.nav-list,
+.nav-item {
+    @media screen and (max-width: 1279px) {
+        display: none;
+      }
+    
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+}
+
+.nav-list {
+    padding-left: 240px;
+    padding-top: 35px;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.nav-link {
+    color: $color-design-white;
+    transition: 0.3s;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.313;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: $color-design-main;
+    }
+}
+
+.vector-img {
+    padding-top: 7px;
+    margin-left: 12px;
+}
+
+.header .white-button {
+    margin-top: 36px;
+    font-weight: 700;
+    font-size: 16px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: auto;
+    }
+}
